@@ -1,0 +1,83 @@
+
+/* The CSS language follows rules of Cascde and Specificity to determine which of several overlapping styles will be applied.
+    - Cascade: Rules that appear lower down in the CSS document will be prioritised over ones higher up.
+    - Specificity: Rules that are more specifically targeted are prioritised over less specifically targeted ones. This rule overrides the Cascade rule.
+        For example, a class selector would override an element selector, and an element selector would override the all selector (*) 
+        
+    In complex documents it can be difficult to identify the source of style conflicts. Specificity calculators exist, and methods also exist to help with this.*/
+
+/*Selecting everything. As CSS is cascading, rules below this one will take priority. Try commenting some styles out to see the effect of the all selector *. */
+
+* {
+    color: darkslategrey;
+}
+
+/* Selecting an element type */
+
+h1 {
+    color: red;
+  }
+
+p {
+    color: green;
+    padding:5px;
+}
+
+li {
+    list-style-type: disclosure-open;
+}
+
+
+/*Selecting multiple things: Seperate with commas*/
+a, em {
+    color: blue;
+}
+
+/*Selecting an element type, but only when it is a child of another specific element type*/
+
+li em {
+    color: magenta;
+}
+
+
+/*Selecting a class*/
+.special {
+    color: orange;
+    font-weight: bold;
+}
+
+
+/*Selecting a class, but only when it is applied to a specific element*/
+em.special {
+    color: brown;
+    font-weight:bold;
+}
+
+/*Selecting an id*/
+#fifth {
+    color: purple;
+    font-style: italic;
+}
+
+
+/*Selecting an element only when it comes aftetr anothe specific element, at the same heirarchy level*/
+
+h2 + p {
+    font-size: 150%;
+}
+
+/*Selecting an emelent on when it is in a specific state. We will use the example of a hyperlink.*/
+
+a:link{
+    color: grey
+}
+
+a:visited {
+    color: pink;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: magenta;
+}

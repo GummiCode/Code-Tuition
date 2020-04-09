@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Practice Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<h1>Practice Page: CSS</h1>
+
+<h2>Styles and Rules</h2>
+<p>Styles are graphical changes imposed on HTML by CSS. Rules are sets of styles targted at specific HTML elements.</p>
+<p>The paragraph above was formatted using a <em>rule</em>  containing several <em>styles</em>.</p>
+<p>The <em>rule</em> is a set of properties targeted at a specific element or set of elements. In this case the target is all paragraphs directly folowing a h2 header.</p> 
+<p>The <em>properties</em> of the rule are the stylistic changes to be applied. In this case the properties are a border in dark slate grey, a background in lavender, italic text, and a line width of 700px.</p>
+<p>Styles are diverse and flexible. You'll pick up a lot of them through use. Cheatsheets can be used when required.</p>
+
+<h2>Functions</h2>
+<p>There are some CSS values that take the form of a <em>function</em> rather than a property:value pair. These allow you to enter calculations into the CSS rather than fixed values.<p>
+
+</p>An example is the <em>calc()</em> function, used in the box below.</p>
+
+<div class="outerbox">
+    <div class="innerbox">The inner box width is 90% of the outer box minus 50px. The inner box dimensions were automatically determined using calc().</div>
+</div>
+
+<div class="rotatedbox">This box is rotated using the <em>transform</em> property with the <em>rotate()</em> function as its value. The same instance of the <em>transform</em> property also includes a <em>translate()</em> function that has been used to move this element away from the elemets above and below it.</div>
+
+<div class="patternbox">This box has been given a pretty background using the <em>background-image</em> property and the <em>url()</em> function.</div>
+
+
+<h2>@rules</h2>
+
+<p>@rules add enhanced functionality to our CSS.</p>
+
+<p>@rules (pronounced "at-rules") are rules that tell the CSS document to behave a specfic way or perform a specific function not directly related to imposing rules on the html. For example rules exist which import an external style sheet or impose a rule only under certain conditions.</p>
+
+<p>The <em>@import</em> @rule imports an additional stylesheet into the CSS document.</p>
+
+<p>The <em>@media</em> @rule allows us to use media quieries to apply CSS only when certain conditions are true. For example it can cause different rules to be invoked according to the size of the browser window. One has been applied to this window; if its width is below 500 pixels the background will turn dark slate grey.</p>
+
+
+
+
+<h2> Shorthand Properties</h2>
+
+<p>Shorthand properties can hold values for several parameters in a single line. This helps make our code concise.</p>
+
+<p>We've already used a few shorthand properties in this document</p>
+<p>The <em>font</em> property can take multiple values. It tells the browser to use one of these fonts in order of preference from left to right, so that if a font is not available the next best one can be used.</p>
+<p>The <em>border</em> property can hold values for the border width, pattern and colour, and the fill colour, among other things. </p>
+
+<p class="padding">This text box uses a shorthand property called <em>padding</em> which sets aside space between its borders and its contents. The spacing values are listed within the property; top, right, bottom, then left.</p>
+
+<p class="backgroundbox">This text box uses the <em>background</em> shorthand property to assign a background image, its ofset and repeat pattern. additional attributes can also be assigned. This saves writing seperate lines for each property.</p>
+
+
+
+
+
+
+</html>
