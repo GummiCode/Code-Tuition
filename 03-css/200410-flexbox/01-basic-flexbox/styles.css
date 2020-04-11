@@ -1,0 +1,118 @@
+.book {
+    width:70px;
+    height: 70px;
+}
+
+/* To create a flexbox/flex container set the parameter 'display' to 'flex'. */
+/* Use flex-direction to set the axis and start/end point of the flex container; row >, row-reverse < ,column\/ or column-reverse /\.*/
+.eg-row-reverse {
+    background: bisque;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+
+.eg-flex-wrap {
+    background: bisque;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+
+.eg-flex-flow {
+    background: paleturquoise;
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+.eg-flex {
+    background: peachpuff;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+
+div > .book {
+
+    display: flex;
+    justify-conent: space-around;
+}
+
+.eg-axis-stretch {
+    background-color: moccasin;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    align-items: stretch;
+}
+
+.eg-flex-start{
+    background-color: moccasin;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.eg-flex-end {
+    background-color: moccasin;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.eg-axis-center {
+    background-color: moccasin;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.eg-justify-start {
+    background-color: palegreen;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.eg-justify-end {
+    background-color: palegreen;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.eg-justify-center {
+    background-color: palegreen;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.eg-justify-space-around {
+    background-color: palegreen;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.eg-justify-space-between {
+    background-color: palegreen;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eg-justify-space-evenly {
+    background-color: palegreen;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+footer > p {
+    color: dimgrey;
+}

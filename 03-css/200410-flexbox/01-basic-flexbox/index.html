@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+
+    <h1 class="text">Let's play with flex containers!</h1>
+
+    <h2>1. Creating a Flexbox/Flex Container</h2>
+    <p>The paragraphs below are in a flexbox with its flex-direction set to row-reverse.</p>
+    <p> To do this set display: flex, and then set a flex-direction property.</p>
+    <div>
+        <div class="eg-row-reverse">
+            <p>Line 1.</p>
+            <p>Line 2.</p>
+            <p>Line 3.</p>
+            <p>Line 4.</p>
+            <p>Line 5.</p>  
+    
+        </div>
+    </div>
+
+
+    <h2>2. Flex-Wrap.</h2>
+    <p>The images below wrap when the browser window is resized. The flexbox resizes accordingly.</p>
+    <div>
+        <div class="eg-flex-wrap">
+            <img class="book" id="bookstart" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" id="bookend" src="book.png">
+        </div>
+    </div>
+
+    <h2>3. Flex-Flow.</h2>
+    <p>Flex-direction and flex-wrap can be defined in the flex-flow shorthand property. Enter the flow direction then the flow wrap.</p>
+    <div>
+        <div class="eg-flex-flow">
+            <img class="book" id="bookstart" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" src="book.png">
+            <img class="book" id="bookend" src="book.png">
+        </div>
+    </div>
+
+    <h2>4. Grow, Shrink and Basis; Flex Shorthand.</h2>
+    <p>Elements can be set to grow and/or shrink in various ways to adapt to the size of the browser window.</p>
+    <p>The parameters  for these can be assigned individualy or using the 'flex' property, assigning it grow, shrink and basis values.</p>
+    <p>TODO: We haven't discussed Basis yet. This defines the element in terms of 'the space it leaves as available space' It's not clear what this emans. I'll find a good example.</p>
+    <p>TODO: Curiously a higher rule in the cascade seems to be taking priority over these resizing rules. As such I've changed the class of the items below to differentiat ethem from the "book" class items above. i should investigate this.</p>
+    <div>
+        <div class="eg-flex">
+            <img class="paperback" id="bookstart" src="book.png">
+            <img class="paperback" src="book.png">
+            <img class="paperback" src="book.png">
+            <img class="paperback" src="book.png">           
+            <img class="paperback" src="book.png">            
+            <img class="paperback" src="book.png">            
+            <img class="paperback" src="book.png">            
+            <img class="paperback" src="book.png">            
+            <img class="paperback" src="book.png">
+            <img class="paperback" id="bookend" src="book.png">
+        </div>
+    </div>
+
+
+    <h2>5. Cross-Axial Alignment: The align-items property.</h2>
+    <p>The 'align-items' property defines how items are aligned on the cross-axis. They can be aligned to the start, end or center cross-axial point of the container, or they can be stretched to fill the container on the cross-axis.</p>
+
+    <p>Here are three images at their default sizes, defined by the image files they originated from.No alignment has been defined. Their cross-axial container size is defined by the size of the largest element, which is the cat.</p>
+
+
+        <div>
+            <img class="smolbird" src="bird-50px.jpg">
+            <img class="bird" src="bird-100px.jpg">
+            <img class="cat" src="cat-200px.jpg">
+        </div>
+
+    <p>The align-items property is added in the example below. its default value is 'stretch', which stretches all elements to fit the container; the smaller birds stretch to the cross-axial size of the larger cat.</p>
+
+        <div class="eg-axis-stretch">
+            <img class="smolbird" src="bird-50px.jpg">
+            <img class="bird" src="bird-100px.jpg">
+            <img class="cat" src="cat-200px.jpg">
+        </div>
+
+    <p>In the example below the alignment is set to flex-start, which causes the container's contents to align to its cross-axial 'start'. The cross-axis is column, so the cross-axial start is the top of the container.</p>
+
+
+    <div class="eg-flex-start">
+        <img class="smolbird" src="bird-50px.jpg">
+        <img class="bird" src="bird-100px.jpg">
+        <img class="cat" src="cat-200px.jpg">
+    </div>
+
+    <p>In the next example the alignment is set to flex-end. The container's contents align to its cross-axial 'end'. In this case, that is its bottom.</p>
+
+    <div class="eg-flex-end">
+        <img class="smolbird" src="bird-50px.jpg">
+        <img class="bird" src="bird-100px.jpg">
+        <img class="cat" src="cat-200px.jpg">
+    </div>
+
+    <p>In this final example the alignment is set to center.</p>
+    
+    <div class="eg-axis-center">
+        <img class="smolbird" src="bird-50px.jpg">
+        <img class="bird" src="bird-100px.jpg">
+        <img class="cat" src="cat-200px.jpg">
+    </div>
+
+</body>
+
+
+<h2>6. Main Axial Alignment: The justify-content property.</h2>
+<p>The 'justify content' property defines alignment on the main axis. This is easier to visualise! Here are a few examples.</p>
+
+<ol>
+    <li>
+        <p>flex-start:</p>
+        <div class="eg-justify-start">
+            <img class="bird" src="bird-100px.jpg">
+            <img class="bird" src="bird-100px.jpg">
+            <img class="bird" src="bird-100px.jpg">
+        </div>
+    </li>
+
+    <li>
+        <p>flex-end:</p>
+        <div class="eg-justify-end">
+            <img class="bird" src="bird-100px.jpg">
+            <img class="bird" src="bird-100px.jpg">
+            <img class="bird" src="bird-100px.jpg">
+        </div>
+    </li>
+
+    <li>
+        <p>center:</p>
+        <div class="eg-justify-center">
+            <img class="bird" src="bird-100px.jpg">
+            <img class="bird" src="bird-100px.jpg">
+            <img class="bird" src="bird-100px.jpg">
+        </div>
+    </li>
+    
+    <li>
+        <p>space-around:</p>
+        <div class="eg-justify-space-around">
+            <img class="bird" src="bird-100px.jpg">
+            <img class="bird" src="bird-100px.jpg">
+            <img class="bird" src="bird-100px.jpg">
+        </div>
+    </li>
+
+    <li>
+        <p>space-between:</p>
+        <div class="eg-justify-space-between">
+            <img class="bird" src="bird-100px.jpg">
+            <img class="bird" src="bird-100px.jpg">
+            <img class="bird" src="bird-100px.jpg">
+        </div>
+    </li>
+
+    <li>
+        <p>space-evenly:</p>
+        <div class="eg-justify-space-evenly">
+            <img class="bird" src="bird-100px.jpg">
+            <img class="bird" src="bird-100px.jpg">
+            <img class="bird" src="bird-100px.jpg">
+        </div>
+    </li>
+
+
+</ol>
+
+    <footer>
+        <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+    </footer>
