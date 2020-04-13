@@ -1,0 +1,26 @@
+/*Template stylesheet for CSS notes*/
+
+* {
+    
+    font-family:'PT Sans', Arial, Helvetica, sans-serif;
+    color:darkslategrey;
+}
+
+
+h3 + p {
+    background-color:  lightblue;
+    font-style: italic;
+    border: 1px solid darkslategrey;
+}
+
+h2, p:last-child {
+    padding: 0px 0px 20px 0px;
+    border-bottom: 1px solid darkslategrey;
+}
+
+footer {
+    padding: 15px 0px 0px 0px;
+    color: lightslategrey;
+    border-top: 1px solid darkslategrey;
+    font-style: italic;
+}

@@ -1,0 +1,48 @@
+/*Template stylesheet for CSS notes*/
+
+* {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    color:darkslategrey;
+    
+
+}
+
+h1 {
+    border: 1px solid darkslategrey;
+    justify-content: center;
+    padding: 10px, 10px, 10px, 10px;
+}
+
+h3 + p {
+    display: flex;
+    flex-flow: row wrap;
+    background-color:  lightblue;
+    font-style: italic;
+    border: 1px solid darkslategrey;
+}
+
+h2, div > *:last-child {
+    padding: 0px 0px 20px 0px;
+    border-bottom: 1px solid darkslategrey;
+}
+
+footer {
+    padding: 15px 0px 0px 0px;
+    color: lightslategrey;
+    border-top: 1px solid darkslategrey;
+    font-style: italic;
+}
+
+
+em {
+    font-weight: bold;
+
+}
+
+* {
+    min-width: 80%;
+    max-width: 800px;
+}

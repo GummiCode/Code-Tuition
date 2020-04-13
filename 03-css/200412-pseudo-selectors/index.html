@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Roboto+Condensed:400,500,700">    
+    <title>CSS: Pseudo-selectors</title>
+</head>
+
+<body>
+
+<h1>CSS: Pseudo-selectors</h1>
+<h2>Targeting specific instances of elements</h2>
+
+
+<div>
+    <h3>Introduction</h3>
+    <p>Pseudo-selectors allow us to select specific instances of an element type using customisable rules. They're powerfully selective.</p>
+    <p> Suppose our document contains mutliple headings followed by paragraphs of text, and we want the final paragraph of each such section to be italicised. How would we go about this?</p>
+    <p>We've looked at a few methods to do this sort of thing.</p>
+    <p><em>Classes</em> are one way of picking out one specific element among a set of the same element type. However classes can be labourious to use. Lots of elements need modifying to include appropriate classes.</p>
+    <p>Some <em>CSS properties</em> pick out specific elements too, such as children of specific elements or the first instance of an element following another specific element. These methods are useful but they have limited scope.</p>
+    <p><em>Pseudo-classes</em> are a CSS tool that we could use to this end. Pseudo-classes add to a property and give it some extra rules to work with, allowing it to pick out individual instances of elements with great specificity based on their 'state'.</p>
+    <p>There are mutliple benefits to this.</p>
+        <ul>
+            <li>It avoids excessive use of classes. This helps keep HTML dry.</li>
+            <li>It allows the use of pre-made stylesheets without modifying our HTML.</li>
+            <li>It's powerfully selective. Pseudo-selector rules can be programmed in myriad
+            ways to pick out precisely the elements we want to traget.</li>
+            <li>It facilitates HTML maintenance. If appropriate pseudo-classes are used then conscientious changes to the HTML will not cause editing errors.</li>
+        </ul>
+    <p>In the following sections I'll test some pseudo-selectors out. Full details can be found in the <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements">MDN web docs</a>.</p>
+</div>
+
+
+<div>
+    <h3>:first-child, :last-child</h3>
+    <p>first-child causes the property to only apply to instances of the element that are a first-child.
+    <br>last-child targets instances of the element that are a last-child.</p>
+    <h4>Examples:</h4>
+    <ul>
+        <li><em>p:first-child</em> would target all p elements that are first children.</li>
+        <li><em>li:last-child</em> would target all li elements that are last children. These would commonly be the final element in a list.</li>
+        <li><em>div p:last-child</em> would target the final p element in sets of children, but only if they are children of a div element.</li>        
+    </ul>
+</div>
+
+
+<div>
+    <h3>:nth</h3>
+    <p>Targets elements using a numeric sequence</p>
+    <p>Various pseudo-classes target elements using a mathematical sequence. These include:
+        <ul>
+            <li>:nth-child</li>
+            <li>:nth-of-type</li>
+            <li>:nth-last-child</li>
+            <li>:nth-last-of-type</li>
+        </ul>
+
+    <p><em></em></p>
+
+</div>
+
+<div>
+    <h3>Section</h3>
+    <p>A</p>
+    <p>B</p>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</div>
+
+<div>
+    <h3>Section</h3>
+    <p>A</p>
+    <p>B</p>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</div>
+
+<div>
+    <h3></h3>
+    <p></p>
+    <p></p>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<footer>
+    footer
+</footer>
+
+</body>
+</html>

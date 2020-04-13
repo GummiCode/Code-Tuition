@@ -66,7 +66,16 @@ h2 + p {
     font-size: 150%;
 }
 
-/*Selecting an emelent on when it is in a specific state. We will use the example of a hyperlink.*/
+/* select all instances of a  specific element only when they follow another specific element, at the same heirarchy level*/
+
+.red ~ p {
+    display: flex;
+    width: 300px;
+    background-color: maroon;
+    color: white;
+}
+
+/*Selecting an element on when it is in a specific state. We will use the example of a hyperlink.*/
 
 a:link{
     color: grey
@@ -80,4 +89,18 @@ a:hover {
     text-decoration: none;
     font-weight: bold;
     color: magenta;
+}
+
+
+/* Sleecting the first or last child of an element*/
+/*The position of the colon is critical! It must come directly before the :first-child or :last-child term.*/
+
+.first-last-child :first-child {
+    color: lavender;
+    background-color: palevioletred;
+}
+
+.first-last-child :last-child {
+    color: lavender;
+    background-color :cornflowerblue;
 }
