@@ -1,12 +1,17 @@
 * {
     color: dimgrey;
     font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+
+    margin: 10px;
+
+
 }
 
 /* Top Nav Bar 
 TODO: Refine formatting*/
 
 .top-nav-bar {
+    margin: 0px;
     position: fixed;
     top: 0;
     left: 0;
@@ -24,54 +29,111 @@ TODO: Refine formatting*/
     align-items: center;
 }
 
-.top-nav-bar ul li {
-    padding: 0px 20px 0px 0px;
+/* TODO: Choose between rounded buttons/plain text for nav bar
+.top-nav-bar li {
+    background-color: gainsboro;
+    border-radius: 5pt;
+}
+ */
+
+.top-nav-bar a {
+    text-decoration: none;
 }
 
 /* End Top Nav Bar*/
 
-header {
+/* Padding Body: To account for the nav bar */
+body {
+    padding-top: 60px;
     
-    /*Put space above this element*/
-    /*Box height: Flex to that of its contents * 10px padding*/
-    /*Box width: Page width -10px padding%/
-    /*Box fill: whitemsoke*/
+}
+/* End body */
+
+
+/* Header */
+header {
+
+    padding: 20px 50px 20px 20px;
+    width: calc(100%-10px);
+    /*Box height: Flex to that of its contents * 10px padding. For now we're just using a 20% margin.*/
+    margin: 20px;
+    /*Box width: Page width -10px padding%*/
+    border-radius: 15pt;
+    background-color: whitesmoke;
     /*Box border: Solid, curved corners, slightly derker gery than whitesmoke*/
+    display: flex;
+    flex-flow: row unwrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    
     /* Align contents to the top, max space in middle, 10px padding, row.
     That will put text and links box to left, and image to right.*/
 }
 
 section.details {
 
-    /* Text and links in header. */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 60%;
+
+
     /* One large box. */
     /* Column, left alignment. */
 
 }
 
 section.details h1 {
-    /* My name. Just adjust size. */
+    padding: 0px 20px 0px 0px;
+    font-size: 2.8em;
 }
 
 section.details h2 {
-    /* GummiCode, & blurb. Just adjust size. */
+    width: 100%
+    height: calc(100% + 10px);
+    padding: 0px 20px 0px 0px;
+    font-size: 2.2em;
+}
+
+section.details p {
+    line-height: 120%;
+    font-size: 1.6em;
+}
+
+section.details p.statement {
+    font-weight: bold;
 }
 
 section.details nav {
-    /* Row align */
+    flex-flow: row nowrap;
     /*Set the icon spacing*/
-    /*Set the icons to a uniform size. Try 100px to start with. */
 }
 
-header img {
+section.details nav img, section.contact nav img {
+    height:100px;
+    width:100px;
+}
+
+section.details a, section.contact a {
+    text-decoration: none;
+    height:100px;
+    width:100px;
+}
+
+img.profile-picture {
     /*My profile pic.*/
     /* Define the height to appropriately fit the header box.*/
+    border-radius: 10%;
+    display: flex;
+    width: 350px;
+    height: 350px;
+    padding: 20px 20px 20px 20px;
     /* Align it to the top of the box. */
     /* Give it a circular shape, chopping off the edges.*/
     /*Ensure the alignment of the image itself is such nthat your face is clearly visible. */
 }
 
-
+/* End header */
 
 /* GummiCode Title */
 
