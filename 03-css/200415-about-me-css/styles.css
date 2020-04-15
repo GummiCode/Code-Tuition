@@ -1,3 +1,45 @@
 * {
-    color: darkslategrey;
+    color: dimgrey;
+    font-family: "Roboto", "Arial", "Helvetica", sans-serif;
 }
+
+/* Top Nav Bar 
+TODO: Refine formatting*/
+
+.top-nav-bar {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row unwrap;
+    background-color: whitesmoke;
+}
+
+.top-nav-bar ul {
+    width: auto;
+    color: red;
+    font-size: 1.4em;
+    list-style: none;
+    display: flex;
+    flex-flow: row unwrap;
+    align-items: center;=
+
+}
+
+.top-nav-bar ul li {
+    padding: 0px 20px 0px 0px;
+    display:flex;
+    flex-grow: 1;
+
+}
+
+
+/* End Top Nav Bar*/
+
+/* GummiCode Title */
+
+/* Intro Text */
+
+/* Links */
+
+/* Profie Picture0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 */
