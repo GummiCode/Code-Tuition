@@ -29,7 +29,7 @@ TODO: Refine formatting*/
     align-items: center;
 }
 
-/* TODO: Choose between rounded buttons/plain text for nav bar
+/* TODO: Choose between rounded buttons/plain text for nav bar.
 .top-nav-bar li {
     background-color: gainsboro;
     border-radius: 5pt;
@@ -44,15 +44,14 @@ TODO: Refine formatting*/
 
 /* Padding Body: To account for the nav bar */
 body {
-    padding-top: 60px;
-    
+    padding-top: 60px;   
 }
+
 /* End body */
 
-
 /* Header */
-header {
-
+section.card {
+/*TODO: Consider moving this to the bototm of the page and installing a HERO header isntead*/
     padding: 20px 50px 20px 20px;
     width: calc(100%-10px);
     /*Box height: Flex to that of its contents * 10px padding. For now we're just using a 20% margin.*/
@@ -133,12 +132,3 @@ img.profile-picture {
     /*Ensure the alignment of the image itself is such nthat your face is clearly visible. */
 }
 
-/* End header */
-
-/* GummiCode Title */
-
-/* Intro Text */
-
-/* Links */
-
-/* Profie Picture0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 */
