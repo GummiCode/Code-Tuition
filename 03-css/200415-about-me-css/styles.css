@@ -8,6 +8,8 @@ TODO: Refine formatting*/
 
 .top-nav-bar {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 50px;
     display: flex;
@@ -16,25 +18,60 @@ TODO: Refine formatting*/
 }
 
 .top-nav-bar ul {
-    width: auto;
-    color: red;
     font-size: 1.4em;
     list-style: none;
     display: flex;
-    flex-flow: row unwrap;
-    align-items: center;=
-
+    align-items: center;
 }
 
 .top-nav-bar ul li {
     padding: 0px 20px 0px 0px;
-    display:flex;
-    flex-grow: 1;
+}
+
+/* End Top Nav Bar*/
+
+header {
+    
+    /*Put space above this element*/
+    /*Box height: Flex to that of its contents * 10px padding*/
+    /*Box width: Page width -10px padding%/
+    /*Box fill: whitemsoke*/
+    /*Box border: Solid, curved corners, slightly derker gery than whitesmoke*/
+    /* Align contents to the top, max space in middle, 10px padding, row.
+    That will put text and links box to left, and image to right.*/
+}
+
+section.details {
+
+    /* Text and links in header. */
+    /* One large box. */
+    /* Column, left alignment. */
 
 }
 
+section.details h1 {
+    /* My name. Just adjust size. */
+}
 
-/* End Top Nav Bar*/
+section.details h2 {
+    /* GummiCode, & blurb. Just adjust size. */
+}
+
+section.details nav {
+    /* Row align */
+    /*Set the icon spacing*/
+    /*Set the icons to a uniform size. Try 100px to start with. */
+}
+
+header img {
+    /*My profile pic.*/
+    /* Define the height to appropriately fit the header box.*/
+    /* Align it to the top of the box. */
+    /* Give it a circular shape, chopping off the edges.*/
+    /*Ensure the alignment of the image itself is such nthat your face is clearly visible. */
+}
+
+
 
 /* GummiCode Title */
 
