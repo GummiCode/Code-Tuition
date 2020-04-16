@@ -45,14 +45,13 @@ TODO: Refine formatting*/
     text-decoration: none;
 }
 
-/* End Top Nav Bar*/
-
 /* Padding Body: To account for the nav bar */
 body {
     padding-top: 60px;   
 }
 
-/* End body */
+/* End Top Nav Bar*/
+
 
 /* Header */
 section.card {
@@ -61,6 +60,7 @@ section.card {
     width: calc(100%-10px);
     /*Box height: Flex to that of its contents * 10px padding. For now we're just using a 20% margin.*/
     margin: 10px;
+    margin-bottom: 40px;
     /*Box width: Page width -10px padding%*/
     border-radius: 15pt;
     background-color: whitesmoke;
@@ -128,7 +128,6 @@ img.profile-picture {
     /*My profile pic.*/
     /* Define the height to appropriately fit the header box.*/
     border-radius: 10%;
-    display: flex;
     width: 350px;
     height: 350px;
     padding: 20px 20px 20px 20px;
@@ -137,18 +136,98 @@ img.profile-picture {
     /*Ensure the alignment of the image itself is such nthat your face is clearly visible. */
 }
 
+/* End Header*/
+
+
+/*Sections*/
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1.1em;
+}
+
 section.section {
     width: 75%;
     min-width: 600px; 
+    margin-bottom: 40px;
     display: flex;
     flex-flow: column wrap;
 }
 
+
 section.subsection {
+    margin: 0px;
     width: 100%;
+    margin-bottom: 40px;
 }
 
-section h3 {
-    font-size: 1.6em;
 
+section.subsection ul {
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: left;
+}
+
+section.subsection li {
+    margin: 0px;
+    padding: 20px 50px 20px 20px;
+    width: calc(100%-10px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15pt;
+    border: 1px solid lavender;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+        
+    /* Align contents to the top, max space in middle, 10px padding, row.
+    That will put text and links box to left, and image to right.*/
+    }
+
+
+
+
+
+
+    /*Food section*/
+
+    h4.subheading {
+        padding: 20px 0px 0px 0px;
+    }
+
+section.list-item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.list-item p {
+    width: 75%;
+}
+
+img.venue-logo {
+    width: 150px;
+    object-fit: contain;
+    object-position: top;
+}
+
+img.venue-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15pt;
 }
