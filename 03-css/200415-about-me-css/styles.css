@@ -22,6 +22,11 @@ TODO: Refine formatting*/
     background-color: whitesmoke;
 }
 
+.top-nav-bar > p {
+     font-size: 1.4em;
+    width: 300p
+}
+
 .top-nav-bar ul {
     font-size: 1.4em;
     list-style: none;
@@ -55,7 +60,7 @@ section.card {
     padding: 20px 50px 20px 20px;
     width: calc(100%-10px);
     /*Box height: Flex to that of its contents * 10px padding. For now we're just using a 20% margin.*/
-    margin: 20px;
+    margin: 10px;
     /*Box width: Page width -10px padding%*/
     border-radius: 15pt;
     background-color: whitesmoke;
@@ -132,3 +137,18 @@ img.profile-picture {
     /*Ensure the alignment of the image itself is such nthat your face is clearly visible. */
 }
 
+section.section {
+    width: 75%;
+    min-width: 600px; 
+    display: flex;
+    flex-flow: column wrap;
+}
+
+section.subsection {
+    width: 100%;
+}
+
+section h3 {
+    font-size: 1.6em;
+
+}
