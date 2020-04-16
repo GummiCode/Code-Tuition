@@ -1,11 +1,14 @@
 * {
     color: dimgrey;
     font-family: "Roboto", "Arial", "Helvetica", sans-serif;
-
     margin: 10px;
-
-
 }
+
+a {
+    margin: 0px;
+}
+
+/*TODO: Spacing between paragraphs, between ehadings, and between boxes is all over the place. Establish a common format. I suggest 10px after each of these elements and 20px above each main ehading.*/
 
 /* Top Nav Bar 
 TODO: Refine formatting*/
@@ -18,7 +21,7 @@ TODO: Refine formatting*/
     width: 100%;
     height: 50px;
     display: flex;
-    flex-flow: row unwrap;
+    flex-flow: row nowrap;
     background-color: whitesmoke;
 }
 
@@ -47,7 +50,8 @@ TODO: Refine formatting*/
 
 /* Padding Body: To account for the nav bar */
 body {
-    padding-top: 60px;   
+    padding-top: 60px; 
+/*TODO: Give the body a PADDING-LEFT of 10px, and remove all the unneccessary left margins from this document!*/  
 }
 
 /* End Top Nav Bar*/
@@ -113,6 +117,7 @@ section.details nav {
     /*Set the icon spacing*/
 }
 
+/*TODO: Set link icons to resize sensibly*/
 section.details nav img, section.contact nav img {
     height:100px;
     width:100px;
@@ -154,7 +159,7 @@ h5 {
     font-size: 1.1em;
 }
 
-section.section {
+.section {
     width: 75%;
     min-width: 600px; 
     margin-bottom: 40px;
@@ -163,14 +168,14 @@ section.section {
 }
 
 
-section.subsection {
+.subsection {
     margin: 0px;
     width: 100%;
     margin-bottom: 40px;
 }
 
 
-section.subsection ul {
+.subsection ul {
     padding: 0px 0px 0px 0px;
     margin: 0px;
     list-style: none;
@@ -179,7 +184,7 @@ section.subsection ul {
     align-items: left;
 }
 
-section.subsection li {
+.subsection li {
     margin: 0px;
     padding: 20px 50px 20px 20px;
     width: calc(100%-10px);
@@ -198,7 +203,28 @@ section.subsection li {
     That will put text and links box to left, and image to right.*/
     }
 
+.subsection li h5 {
+    margin: 0px;
+}
 
+
+/*Digital Art Section*/
+
+.drawings {
+    padding: 20px 50px 20px 20px;
+    margin-bottom: 10px;
+    border-radius: 15pt;
+    border: 1px solid lavender;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: whitesmoke;
+}
+
+.drawings img {
+    width: 30%;
+    border: 1px solid lavender;
+    border-radius: 15pt;
+}
 
 
 
@@ -231,3 +257,28 @@ img.venue-photo {
     object-fit: cover;
     border-radius: 15pt;
 }
+
+
+
+
+/* Contact Section */
+
+section.contact {
+    /*TODO: Consider moving this to the bototm of the page and installing a HERO header isntead*/
+        padding: 20px 50px 20px 20px;
+        width: calc(100%-10px);
+        /*Box height: Flex to that of its contents * 10px padding. For now we're just using a 20% margin.*/
+        margin: 10px;
+        margin-bottom: 40px;
+        /*Box width: Page width -10px padding%*/
+        border-radius: 15pt;
+        background-color: whitesmoke;
+        /*Box border: Solid, curved corners, slightly derker gery than whitesmoke*/
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+        /* Align contents to the top, max space in middle, 10px padding, row.
+        That will put text and links box to left, and image to right.*/
+    }
