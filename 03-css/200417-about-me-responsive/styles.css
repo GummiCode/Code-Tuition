@@ -16,11 +16,12 @@ TODO: Refine formatting*/
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px; 
+    height: 40px; 
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     background-color: whitesmoke;
+    border-bottom: solid 1px lavender;
 }
 
 .top-nav-bar > p {
@@ -58,9 +59,7 @@ TODO: Refine formatting*/
 
 /* Padding Body: To account for the nav bar */
 body {
-    padding-top: 60px; 
-    padding-left: 10px;
-/*TODO: Give the body a PADDING-LEFT of 10px, and remove all the unneccessary left margins from this document!*/  
+    padding: calc(30px + 2vh) 2vw 0px 2vw;
 }
 
 /* End Top Nav Bar*/
@@ -69,15 +68,14 @@ body {
 /* Header */
 section.card {
 /*TODO: Consider moving this to the bototm of the page and installing a HERO header isntead*/
-    padding: 20px 50px 20px 20px;
-    width: calc(100%-10px);
-    /*Box height: Flex to that of its contents * 10px padding. For now we're just using a 20% margin.*/
-    margin: 10px;
-    margin-bottom: 40px;
-    /*Box width: Page width -10px padding%*/
+    padding: 4vw 10px 4vw 10px;
+    height: calc(50vh - 30px);
     border-radius: 15pt;
-    background-color: whitesmoke;
-    /*Box border: Solid, curved corners, slightly derker gery than whitesmoke*/
+    margin-bottom: 40px;
+    background-image: url("images/profile03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: right;
     display: flex;
     flex-flow: row unwrap;
     justify-content: space-between;
@@ -101,15 +99,18 @@ section.details {
 }
 
 section.details h1 {
-    padding: 0px 20px 0px 0px;
-    font-size: 2.8em;
+    padding: 0px 10px 0px 0px;
+    width: 50%;
+    font-size: 2.4em;
+    color: white;
 }
 
-section.details h2 {
-    width: 100%
-    height: calc(100% + 10px);
-    padding: 0px 20px 0px 0px;
-    font-size: 2.2em;
+section.details span.gummi {
+    color: pink;
+}
+
+section.details span.code {
+    color: lightcyan;
 }
 
 section.details p {
