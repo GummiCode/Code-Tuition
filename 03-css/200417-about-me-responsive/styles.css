@@ -4,7 +4,11 @@
 
 }
 
-
+body {
+    padding: 30px 0px 0px 0px;
+    margin: 0;
+    
+}
 
 /*TODO: Spacing between paragraphs, between ehadings, and between boxes is all over the place. Establish a common format. I suggest 10px after each of these elements and 20px above each main ehading.*/
 
@@ -37,7 +41,6 @@ TODO: Refine formatting*/
     justify-content: space-between;
     align-items: center;
     padding: 10px 2vw 10px 2vw;
-
 }
 
 .top-nav-bar li {
@@ -46,97 +49,86 @@ TODO: Refine formatting*/
     flex-flow: row nowrap;
 }
 
-/* TODO: Choose between rounded buttons/plain text for nav bar.
-.top-nav-bar li {
-    background-color: gainsboro;
-    border-radius: 5pt;
-}
- */
-
 .top-nav-bar a {
     text-decoration: none;
-}
-
-/* Padding Body: To account for the nav bar */
-body {
-    padding: calc(30px + 2vh) 2vw 0px 2vw;
 }
 
 /* End Top Nav Bar*/
 
 
+
 /* Header */
-section.card {
-/*TODO: Consider moving this to the bototm of the page and installing a HERO header isntead*/
-    padding: 4vw 10px 4vw 10px;
-    height: calc(50vh - 30px);
-    border-radius: 15pt;
-    margin-bottom: 40px;
-    background-image: url("images/profile03.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;    
-    background-position: right;
-    display: flex;
-    flex-flow: row unwrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    
-    /* Align contents to the top, max space in middle, 10px padding, row.
-    That will put text and links box to left, and image to right.*/
+
+header{
+    height: calc(100vh - 30px);
+    width: 100vw;
+    left: 0px;
+    margin: 0px;
+
 }
 
-section.details {
 
+section.hero {
+    padding: 4vw 10px 4vw 10px;
+    height: 45vh;
+    background-image: url("images/profile05.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+section.hero-text {
+    padding: 15% 3% 0px 0px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    width: 60%;
-
-
-    /* One large box. */
-    /* Column, left alignment. */
-
+    align-content: start;
+    width: 55%;
+    height: 80%;
 }
 
-section.details h1 {
+section.hero-text h1 {
     padding: 0px 10px 0px 0px;
-    width: 50%;
-    font-size: 2.4em;
+    width: 100%;
     color: white;
+    font-size: 1.6em;
+    text-align: right;
 }
 
-section.details span.gummi {
+section.hero-text span.gummi {
     color: pink;
 }
 
-section.details span.code {
+section.hero-text span.code {
     color: lightcyan;
 }
 
-section.details p {
-    line-height: 120%;
-    font-size: 1.6em;
+section.header-text {
+    margin: 2vw;
 }
 
-section.details p.statement {
+section.header-text p {
+    line-height: 120%;
+    font-size: 1.0em;
+}
+
+section.header-text p.statement {
     font-weight: bold;
 }
 
-section.details nav {
+nav.header-links {
+    display: flex;
     flex-flow: row nowrap;
+    justify-content: space-evenly;
     /*Set the icon spacing*/
 }
 
-/*TODO: Set link icons to resize sensibly*/
-section.details nav img, section.contact nav img {
-    height:100px;
-    width:100px;
-}
-
-section.details a, section.contact a {
-    text-decoration: none;
-    height:100px;
-    width:100px;
+nav.header-links img{
+    width: 15vw;
 }
 
 img.profile-picture {
