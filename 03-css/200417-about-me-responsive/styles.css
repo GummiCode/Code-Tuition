@@ -61,7 +61,7 @@ TODO: Refine formatting*/
 /* Header */
 
 header{
-    height: calc(100vh - 6vh);
+    height: calc(100vh - 14vh);
     width: 100vw;
     left: 0px;
     margin: 0px;
@@ -72,7 +72,7 @@ header{
 
 section.hero {
     padding: 4vw 10px 4vw 10px;
-    height: 44%;
+    height: 50%;
     background-image: url("images/profile05.jpg");
     background-repeat: no-repeat;
     background-size: cover;    
@@ -117,7 +117,7 @@ section.hero-text span.code {
 /*Start Header Content*/
 
 .header-content {
-    height: 48%;
+    height: 50%;
 }
 
 section.header-text {;
@@ -130,7 +130,7 @@ section.header-text p {
     padding: 1vh 0 1vh 0;
 }
 
-section.header-text p.statement {
+p.punchy {
     font-weight: bold;
 }
 
@@ -142,17 +142,19 @@ nav.header-links {
     /*Set the icon spacing*/
 }
 
-nav.header-links img{
+.header-links img {
     width: 15vw;
 }
 
 .goto-body {
-    height: 8%;
+    height: 7vh;
+    width: 100vw;
     background-color: lavender;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+
 }
 
 
@@ -170,13 +172,13 @@ nav.header-links img{
 }
 
 .section {
-    height: 100vh;
+    height: 93vh;
     background-color: white;
 }
 
 
 h3 {
-    height: 8%;
+    height: 7vh;
     margin: 0;
     background-color: whitesmoke;
     border: 1px solid lavender;
@@ -191,9 +193,10 @@ h3 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
-    height: 84%;
+    height: 83vh;
 
 }
+
 .section p {
     margin: 0;
     padding: 2vh 2vh 2vh 2vh;
@@ -202,133 +205,65 @@ h3 {
 }
 
 
-h4 {
+.header-text p {
     margin: 0;
-    padding: 2vh 2vh 2vh 2vh;
+    padding: 2vh 2vh 0vh 2vh;
+    background-color: white;
+
+}
+
+.goto {
+    position: relative;
+    top: -7vh;
+}
+
+
+
+h4 {
+    border-top: 1px solid lavender;
+    margin: 0;
+    padding: 2vh 2vh 0vh 2vh;
     font-size: 1.2em;
 }
 
-h5 {
-    font-size: 1.1em;
+h4:first-child {
+    border-top: none;
 }
+
 
 .section { 
     display: flex;
     flex-flow: column nowrap;
 }
 
-
-.subsection {
-    margin: 0px;
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-
-.subsection ul {
-    padding: 0px 0px 0px 0px;
-    margin: 0px;
-    list-style: none;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: left;
-}
-
-.subsection li {
-    margin: 0px;
-    padding: 20px 50px 20px 20px;
-    width: calc(100%-10px);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 15pt;
-    border: 1px solid lavender;
-    background-color: whitesmoke;
-
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: start;
-    align-items: start;
-        
-    /* Align contents to the top, max space in middle, 10px padding, row.
-    That will put text and links box to left, and image to right.*/
-    }
-
-.subsection li h5 {
-    margin: 0px;
-}
-
-
 /*Digital Art Section*/
 
 .drawings {
-    padding: 20px 50px 20px 20px;
-    margin-bottom: 10px;
-    border-radius: 15pt;
-    border: 1px solid lavender;
+    padding: 0 2vw 0 2vw;
     display: flex;
     flex-flow: row wrap;
-    background-color: whitesmoke;
+    justify-content:space-evenly;
+
 }
 
 .drawings img {
-    width: 30%;
+    /*TODO: MAke these imaes enlarge on click and window haze with dark grey. Include close button.*/
+    width: 23%;
     border: 1px solid lavender;
     border-radius: 15pt;
 }
-
-
-
-
-    /*Food section*/
-
-    h4.subheading {
-        padding: 20px 0px 0px 0px;
-    }
-
-section.list-item {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-
-.list-item p {
-    width: 75%;
-}
-
-img.venue-logo {
-    width: 150px;
-    object-fit: contain;
-    object-position: top;
-}
-
-img.venue-photo {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 15pt;
-}
-
-
 
 
 /* Contact Section */
 
-section.contact {
-    /*TODO: Consider moving this to the bototm of the page and installing a HERO header isntead*/
-        padding: 20px 50px 20px 20px;
-        width: calc(100%-10px);
-        /*Box height: Flex to that of its contents * 10px padding. For now we're just using a 20% margin.*/
-        margin: 10px;
-        margin-bottom: 40px;
-        /*Box width: Page width -10px padding%*/
-        border-radius: 15pt;
-        background-color: whitesmoke;
-        /*Box border: Solid, curved corners, slightly derker gery than whitesmoke*/
+    .footer-links {
+        padding: 3vh 0 3vh 0;
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        
-        /* Align contents to the top, max space in middle, 10px padding, row.
-        That will put text and links box to left, and image to right.*/
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        /*Set the icon spacing*/
+    }
+    
+    .footer-links img {
+        width: 15vw;
     }
