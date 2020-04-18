@@ -18,7 +18,6 @@ TODO: Refine formatting*/
 .top-nav-bar {
     /*TODO: Why is this no longer fixe?*/
     position: fixed;
-    transition: 
     top: 0;
     left: 0;
     width: 100%;
