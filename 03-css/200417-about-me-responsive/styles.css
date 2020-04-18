@@ -18,6 +18,7 @@ TODO: Refine formatting*/
 .top-nav-bar {
     /*TODO: Why is this no longer fixe?*/
     position: fixed;
+    transition: 
     top: 0;
     left: 0;
     width: 100%;
@@ -149,7 +150,6 @@ nav.header-links img{
 .goto-body {
     height: 8%;
     background-color: lavender;
-    border: 1px solid lavender;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -157,18 +157,55 @@ nav.header-links img{
 }
 
 
+/* End Header Content*/
 
 /* End Header*/
 
 
-/*Sections*/
+/*Section: text-body*/
 
-h3 {
-    font-size: 1.6em;
+.text-body{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
+.section {
+    height: 100vh;
+    background-color: white;
+}
+
+
+h3 {
+    height: 8%;
+    margin: 0;
+    background-color: whitesmoke;
+    border: 1px solid lavender;
+    font-size: 1.6em;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.section-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    height: 84%;
+
+}
+.section p {
+    margin: 0;
+    padding: 2vh 2vh 2vh 2vh;
+    background-color: white;
+
+}
+
+
 h4 {
-    margin-bottom: 10px;
+    margin: 0;
+    padding: 2vh 2vh 2vh 2vh;
     font-size: 1.2em;
 }
 
@@ -176,12 +213,9 @@ h5 {
     font-size: 1.1em;
 }
 
-.section {
-    width: 75%;
-    min-width: 600px; 
-    margin-bottom: 40px;
+.section { 
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 }
 
 
