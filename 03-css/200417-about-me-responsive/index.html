@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
     <title>David Arrowsmith - About Me</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,8 +15,8 @@
 
     <nav class="top-nav-bar">
         <ul class="top-nav-links">
-            <li><a href="#"><strong>GummiCode</strong></a></li>
-            <li><a href="#">about</a></li>
+            <li><a href="#header"><strong>GummiCode</strong></a></li>
+            <li><a href="#about-me">about</a></li>
             <li><a href="#">interests</a></li>
             <li><a href="#">contact</a></li>
             <!--TODO: When able, reformat the nav bar into a single header of GummiCode which drops down to the nav links.-->
@@ -23,7 +24,7 @@
     </nav>
 
     <header>
-  
+        <a name="header"></a>
             <section class="hero">
 
                 <section class="hero-text">
@@ -32,22 +33,30 @@
                 </section>
             </section>
 
-            <section class="header-text">  
-                <p>I'm a self-training web development student living in Manchester, UK.    </p>
-                <p>My aim: Zero to hero in 6 months.</p>
-            </section>
+            <section class="header-content">
+                <section class="header-text">  
+                    <p>I'm a self-training web development student living in Manchester, UK.</p>
+                 <p>My aim: Zero to hero in 6 months.</p>
+                </section>
 
-            <nav class="header-links">
-                <a href="https://github.com/gummicode">
-                    <img src="images/GitHub-Mark-120px-plus.png" alt="Go to GitHub">
-                </a>
-                <a href="mailto:gummicodeblog@gmail.com">
-                    <img src="images/email.png" alt="Email Me">
-                </a>
-                <a href="https://twitter.com/GummiCode?ref_src=twsrc%5Etfw">  
-                    <img src="images/Twitter_Logo.png" alt="Go to Twitter">
-                </a>
-            </nav>
+                <nav class="header-links">
+                    <a href="https://github.com/gummicode">
+                        <img src="images/GitHub-Mark-120px-plus.png" alt="Go to GitHub">
+                    </a>
+                    <a href="mailto:gummicodeblog@gmail.com">
+                        <img src="images/email.png" alt="Email Me">
+                    </a>
+                    <a href="https://twitter.com/GummiCode?ref_src=twsrc%5Etfw">  
+                        <img src="images/Twitter_Logo.png" alt="Go to Twitter">
+                    </a>
+                </nav>        
+            </section>
+                
+                <nav class="goto-body">
+                    <a href="#about-me">
+                        <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
+                    </a>
+                </nav>   
 
                                     <!--
                 <img class="profile-picture" src="images/profile02.jpg" alt="Profile Picture">
@@ -56,9 +65,10 @@
         </section>
     </header>
 
-<section class="text-body">
 
+<section class="text-body">
     <section class="section" id="about-me">
+        <a name="about-me"></a>
         <!--TODO: Do we want to add some image panels?-->
         <h3>About Me</h3>
         <p>I'm a code newbie living in Manchester, UK. I'm training to change my career from chemical R&D to software egineering.</p>

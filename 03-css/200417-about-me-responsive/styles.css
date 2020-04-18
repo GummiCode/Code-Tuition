@@ -1,11 +1,11 @@
 * {
     color: dimgrey;
     font-family: "Roboto", "Arial", "Helvetica", sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 body {
-    padding: 30px 0px 0px 0px;
+    padding: 7vh 0px 0px 0px;
     margin: 0;
     
 }
@@ -16,11 +16,12 @@ body {
 TODO: Refine formatting*/
 
 .top-nav-bar {
+    /*TODO: Why is this no longer fixe?*/
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 40px; 
+    height: 7vh; 
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -34,7 +35,7 @@ TODO: Refine formatting*/
 }
 
 .top-nav-bar ul {
-    font-size: 1.0em;
+    font-size: 1.1em;
     list-style: none;
     display: flex;
     flex-flow: row-nowrap;
@@ -60,17 +61,18 @@ TODO: Refine formatting*/
 /* Header */
 
 header{
-    height: calc(100vh - 30px);
+    height: calc(100vh - 6vh);
     width: 100vw;
     left: 0px;
     margin: 0px;
-
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 
 section.hero {
     padding: 4vw 10px 4vw 10px;
-    height: 45vh;
+    height: 44%;
     background-image: url("images/profile05.jpg");
     background-repeat: no-repeat;
     background-size: cover;    
@@ -81,12 +83,14 @@ section.hero {
     align-items: flex-start;
 }
 
+
+/*TODO: Better vertically align and space the header text */
 section.hero-text {
     padding: 15% 3% 0px 0px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    align-content: start;
+    align-content: end;
     width: 55%;
     height: 80%;
 }
@@ -95,7 +99,7 @@ section.hero-text h1 {
     padding: 0px 10px 0px 0px;
     width: 100%;
     color: white;
-    font-size: 1.6em;
+    font-size: 2.0em;
     text-align: right;
 }
 
@@ -107,13 +111,23 @@ section.hero-text span.code {
     color: lightcyan;
 }
 
-section.header-text {
-    margin: 2vw;
+
+/*End Hero Image*/
+
+/*Start Header Content*/
+
+.header-content {
+    height: 48%;
+}
+
+section.header-text {;
+    margin: 3vw;
 }
 
 section.header-text p {
     line-height: 120%;
-    font-size: 1.0em;
+    font-size: 1.2em;
+    padding: 1vh 0 1vh 0;
 }
 
 section.header-text p.statement {
@@ -121,6 +135,7 @@ section.header-text p.statement {
 }
 
 nav.header-links {
+    padding: 3vh 0 3vh 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -131,17 +146,17 @@ nav.header-links img{
     width: 15vw;
 }
 
-img.profile-picture {
-    /*My profile pic.*/
-    /* Define the height to appropriately fit the header box.*/
-    border-radius: 10%;
-    width: 350px;
-    height: 350px;
-    padding: 20px 20px 20px 20px;
-    /* Align it to the top of the box. */
-    /* Give it a circular shape, chopping off the edges.*/
-    /*Ensure the alignment of the image itself is such nthat your face is clearly visible. */
+.goto-body {
+    height: 8%;
+    background-color: lavender;
+    border: 1px solid lavender;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 /* End Header*/
 
