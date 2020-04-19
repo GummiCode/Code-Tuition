@@ -29,17 +29,17 @@ body {
 }
 
 .top-nav-bar ul {
+    width: 100vw;
     font-size: 1.1em;
     list-style: none;
     display: flex;
     flex-flow: row-nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 2vw 10px 2vw;
+    padding: 0 10vw 0 15px;
 }
 
 .top-nav-bar li {
-    padding: 0px 2vw 0px 2vw;
     display: flex;
     flex-flow: row nowrap;
 }
@@ -122,14 +122,14 @@ header{
 }
 
 .header-text {;
-    margin: 3vw;
+    margin: 3vh 3vw 3vh 3vw;
 }
 
 .header-text p {
     margin: 0;
     line-height: 120%;
     font-size: 1.2em;
-    padding: 2vh 2vh 0vh 2vh;
+    padding: 2vh 4vw 0vh 4vw;
     background-color: white;
 }
 
@@ -214,15 +214,17 @@ h3 {
 }
 
 .section-text {
+    padding: 2vh 0 0 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
     height: 83vh;
+
 }
 
 .section p {
     margin: 0;
-    padding: 2vh 4vw 2vh 4vw;
+    padding: 1vh 4vw 2vh 4vw;
     background-color: white;
 }
 
@@ -232,7 +234,7 @@ h3 {
 
 h4 {
     margin: 0;
-    padding: 2vh 4vw 2vh 4vw;
+    padding: 1vh 4vw 0vh 4vw;
     font-size: 1.2em;
 }
 
@@ -244,7 +246,7 @@ h4 {
 /*Digital Art Section*/
 
 .drawings {
-    padding: 0 2vw 0 2vw;
+    padding: 1vh 2vw 2vh 2vw;
     display: flex;
     flex-flow: row wrap;
     justify-content:space-evenly;
