@@ -15,13 +15,15 @@
 
     <nav class="top-nav-bar">
         <ul class="top-nav-links">
-            <li><a href="#header"><strong>GummiCode</strong></a></li>
-            <li><a href="#about-me">about</a></li>
-            <li><a href="#interests">interests</a></li>
-            <li><a href="#contact-me">contact</a></li>
+            <li><a href="#goto-header"><strong>GummiCode</strong></a></li>
+            <li><a href="#goto-about-me">about</a></li>
+            <li><a href="#goto-interests">interests</a></li>
+            <li><a href="#goto-contact-me">contact</a></li>
             <!--TODO: When able, reformat the nav bar into a single header of GummiCode which drops down to the nav links.-->
         </ul>
     </nav>
+
+    <a name="goto-top"></a>
 
     <header>
         <a name="header"></a>
@@ -59,7 +61,7 @@
 
 
     <nav class="goto-body">
-        <a href="#goto-about-me">
+        <a  class="goto-bar" href="#goto-about-me">
             <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
 
         </a>
@@ -68,56 +70,39 @@
 
 
 <section class="text-body">
-    <a name="goto-about-me" class="goto"></a>
-    <section class="section" id="about-me">
 
-        <!--TODO: Do we want to add some image panels?-->
+
+
+    <section class="section" id="about-me">
+        <a name="goto-about-me" class="goto"></a>
         <h3>About Me</h3>
+
         <section class="section-text">
             <p>I'm a code newbie living in Manchester, UK. I'm training to change my career from chemical R&D to software egineering.</p>
             <p>Science has long been my primary field of expertise. I've 2 degrees in Chemistry (BSc, MSc by Research). I've worked in the chemical recovery and industrial coatings industries. I've undertaken novel research in nanofabrication and catalytic nanolithography.</p> 
             <p>Over the last few years my awareness of software engineering has grown considerably. I've talked to friends who work in the field, I've read about the industry, I've attended workshops, I've completed online courses. The technology is enjoyable to work with, the field is blooming and opportunities are abundant. It's very exciting and I want to be a part of it. As such I'm redirecting my talents towards software engineering.</p>
-            <p> I'm allowing myself 6 months to acquire the skills I need for my first development position.
+            <p> I'm allowing myself 6 months to acquire the skills I need for my first development position including contemporary languages, test-driven development and experience of collaborative projects.
             <!--
             <p>I'm allowing myself 6 months to acquire the skills I need for my first software development position. I'm starting with HTML, CSS and JavaScript, then I'll progress to test-driven development, express.js, APIs and REACT. I'll engage in some collaborative projects to familiarise myself with shared workflows. By that point I'll be capable of full-stack development of web applications and I'll be ready to seek employment in the field.</p>
             -->
         </section>
-        <nav class="goto-body">
-            <a href="#goto-motivation">
-                <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
-            </a>
-        </nav>
     </section> <!--End of about-me section-->
 
-
-
-    <section class="section" id="motivation">
-        <a name="goto-motivation" class="goto"></a>
-        <h3>Motivation</h3>
-        <section class="section-text">
-            <p> I've been considering changing career to web development for a couple of years now. 
-             some aspects of the industry aren't brilliant, and software development is a very attractive field. I'm adept at problem-solving and functional design, and I'm confident in my ability to learn the skills specific to the trade. The industry is blooming and opportunities are rife. It really excites me to think that I can continue to contribute to the development of useful technologies in this new field.</p>
-
-            <p>Web development presents so many compelling opportunities. I don't want to miss them. I want to play with these technologies. I want to make incredible new tools. I want to collaborate with people in the development of global internet infrastructure, one of our species' most significant inventions. I'm working hard to achieve this. I'm certain that it will be worth the effort. </p>
-        </section>
-        
-        <nav class="goto-body">
-            <a href="#goto-interests">
-                <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
-            </a>
-        </nav>
-    </section> <!--End of motivation section-->
-
+    <nav class="goto-body">
+        <a class="goto-bar" href="#goto-interests">
+            <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
+        </a>
+    </nav>
 
     <section class="section" id="interests">
-        <a name="goto-interests" class="goto"></a>
-             <h3>Interests</h3>
+        <a name="goto-interests" class="goto"></a>   
+        <h3>Interests</h3>
 
+        <section class="section-text">
             <section class="subsection" id="rockclimbing">
                 <h4>Rockclimbing</h4>
                 <!--TODO: Add Images-->
-                <p>Nothing quite simulates the rush of struggling to reach a distant handhold while loosely holding yourself against a shear cliff face.
-                </p>
+                <p>Nothing quite simulates the rush of struggling to reach a distant handhold while loosely holding yourself against a shear cliff face.</p>
             </section>
 
         
@@ -138,33 +123,42 @@
                 <h4>Volunterring</h4>
                 <p>I help organise <a href="#">Queer Family Tea</a>, a weekly social night that provides a safe, inclusive, alcohol-free space for people of all sexualities and gender identities to mix over dinner.</p>
             </section>
-
-        <nav class="goto-body">
-            <a href="#goto-contact-me">
-                <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
-            </a>
-        </nav>
-
+        </section>
     </section> <!--End of interests section-->
+
+    <nav class="goto-body">
+        <a  class="goto-bar" href="#goto-contact-me">
+            <i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
+        </a>
+    </nav>
+
+    <a name="goto-contact-me"></a>
+
+    <nav class="goto-body">
+        <a  class="goto-bar" href="#goto-top">
+            <i class="fa fa-caret-up fa-2x" aria-hidden="true"></i>
+        </a>
+    </nav>
 
 
     <section class="section" id="contact-me">
-        <a name="goto-contact-me"></a>
         <h3>Contact Me</h3>
-        <nav class=footer-links>
-             <a href="https://github.com/gummicode">
-                <img src="images/GitHub-Mark-120px-plus.png" alt="Go to GitHub">
-            </a>
+        <section class="end-section">
+            <nav class=footer-links>
+                <a href="https://github.com/gummicode">
+                    <img src="images/GitHub-Mark-120px-plus.png" alt="Go to GitHub">
+                </a>
 
-            <a href="mailto:gummicodeblog@gmail.com">
-                <img src="images/email.png" alt="Email Me">
-            </a>
+                <a href="mailto:gummicodeblog@gmail.com">
+                    <img src="images/email.png" alt="Email Me">
+                </a>
             
-            <a href="https://twitter.com/GummiCode?ref_src=twsrc%5Etfw">  
-                <img src="images/Twitter_Logo.png" alt="Go to Twitter">
-            </a>
+                <a href="https://twitter.com/GummiCode?ref_src=twsrc%5Etfw">  
+                    <img src="images/Twitter_Logo.png" alt="Go to Twitter">
+                </a>
 
         </nav>
+         </section>
     </section> <!--End of interests section-->
 
 </section> <!-- end of text-body section-->

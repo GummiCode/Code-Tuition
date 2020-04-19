@@ -57,6 +57,8 @@ TODO: Refine formatting*/
 /* End Top Nav Bar*/
 
 
+/*------------------------------------------------------------------*/
+
 
 /* Header */
 
@@ -70,7 +72,7 @@ header{
 }
 
 
-section.hero {
+.hero {
     padding: 4vw 10px 4vw 10px;
     height: 50%;
     background-image: url("images/profile05.jpg");
@@ -85,7 +87,7 @@ section.hero {
 
 
 /*TODO: Better vertically align and space the header text */
-section.hero-text {
+.hero-text {
     padding: 15% 3% 0px 0px;
     display: flex;
     flex-flow: column nowrap;
@@ -95,7 +97,7 @@ section.hero-text {
     height: 80%;
 }
 
-section.hero-text h1 {
+.hero-text h1 {
     padding: 0px 10px 0px 0px;
     width: 100%;
     color: white;
@@ -103,11 +105,11 @@ section.hero-text h1 {
     text-align: right;
 }
 
-section.hero-text span.gummi {
+.hero-text span.gummi {
     color: pink;
 }
 
-section.hero-text span.code {
+.hero-text span.code {
     color: lightcyan;
 }
 
@@ -120,21 +122,23 @@ section.hero-text span.code {
     height: 50%;
 }
 
-section.header-text {;
+.header-text {;
     margin: 3vw;
 }
 
-section.header-text p {
+.header-text p {
+    margin: 0;
     line-height: 120%;
     font-size: 1.2em;
-    padding: 1vh 0 1vh 0;
+    padding: 2vh 2vh 0vh 2vh;
+    background-color: white;
 }
 
-p.punchy {
+.punchy {
     font-weight: bold;
 }
 
-nav.header-links {
+.header-links {
     padding: 3vh 0 3vh 0;
     display: flex;
     flex-flow: row nowrap;
@@ -145,6 +149,12 @@ nav.header-links {
 .header-links img {
     width: 15vw;
 }
+
+/* End Header Content*/
+
+/* End Header --------------------------------------------------------------*/
+
+/*Goto Bars*/
 
 .goto-body {
     height: 7vh;
@@ -157,11 +167,17 @@ nav.header-links {
 
 }
 
+a.goto-bar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
 
-/* End Header Content*/
-
-/* End Header*/
-
+/*End Goto Bars ------------------------------------------------------------*/
 
 /*Section: text-body*/
 
@@ -171,11 +187,15 @@ nav.header-links {
     flex-flow: column nowrap;
 }
 
-.section {
-    height: 93vh;
-    background-color: white;
+.goto {
+    position: relative;
+    top: -7vh;
 }
 
+.section {
+    height: 86vh;
+    background-color: white;
+}
 
 h3 {
     height: 7vh;
@@ -202,19 +222,6 @@ h3 {
     padding: 2vh 2vh 2vh 2vh;
     background-color: white;
 
-}
-
-
-.header-text p {
-    margin: 0;
-    padding: 2vh 2vh 0vh 2vh;
-    background-color: white;
-
-}
-
-.goto {
-    position: relative;
-    top: -7vh;
 }
 
 
@@ -256,14 +263,18 @@ h4:first-child {
 
 /* Contact Section */
 
-    .footer-links {
-        padding: 3vh 0 3vh 0;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-        /*Set the icon spacing*/
-    }
+#contact-me {
+    height: 86vh
+}
+
+.footer-links {
+    padding: 3vh 0 3vh 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    /*Set the icon spacing*/
+}
     
-    .footer-links img {
-        width: 15vw;
-    }
+.footer-links img {
+    width: 15vw;
+}
