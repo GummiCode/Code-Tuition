@@ -63,7 +63,7 @@ TODO: Refine formatting*/
 /* Header */
 
 header{
-    height: calc(100vh - 14vh);
+    height: 86vh;
     width: 100vw;
     left: 0px;
     margin: 0px;
@@ -154,7 +154,7 @@ header{
 
 /* End Header --------------------------------------------------------------*/
 
-/*Goto Bars*/
+/*Goto Bars & Goto Links*/
 
 .goto-body {
     height: 7vh;
@@ -177,6 +177,12 @@ a.goto-bar {
     text-decoration: none;
 }
 
+
+.goto {
+    position: relative;
+    top: -7vh;
+}
+
 /*End Goto Bars ------------------------------------------------------------*/
 
 /*Section: text-body*/
@@ -187,10 +193,6 @@ a.goto-bar {
     flex-flow: column nowrap;
 }
 
-.goto {
-    position: relative;
-    top: -7vh;
-}
 
 .section {
     height: 86vh;
