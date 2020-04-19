@@ -64,43 +64,51 @@ header{
 
 
 .hero {
-    padding: 4vw 10px 4vw 10px;
     height: 50%;
     background-image: url("images/profile05.jpg");
     background-repeat: no-repeat;
     background-size: cover;    
     background-position: center;
     display: flex;
-    flex-flow: row-reverse nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: end;
+    padding: 18vh 4vw 1.5vh 4vw;
 }
 
 
-/*TODO: Better vertically align and space the header text */
-.hero-text {
-    padding: 15% 3% 0px 0px;
+/*
+.hero {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-content: end;
-    width: 55%;
-    height: 80%;
+}
+*/
+
+.hero h1{
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+    font-size: 2.2em;
+    color: burlywood;
 }
 
-.hero-text h1 {
-    padding: 0px 10px 0px 0px;
-    width: 100%;
+.hero h1.hero-name {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: end;
+}
+
+.hero span.hero-name {
     color: white;
-    font-size: 2.0em;
-    text-align: right;
 }
 
-.hero-text span.gummi {
+.hero span.gummi {
     color: pink;
 }
 
-.hero-text span.code {
+.hero span.code {
     color: lightcyan;
 }
 
@@ -214,7 +222,7 @@ h3 {
 
 .section p {
     margin: 0;
-    padding: 2vh 2vh 2vh 2vh;
+    padding: 2vh 4vw 2vh 4vw;
     background-color: white;
 }
 
@@ -224,7 +232,7 @@ h3 {
 
 h4 {
     margin: 0;
-    padding: 2vh 2vh 0vh 2vh;
+    padding: 2vh 4vw 2vh 4vw;
     font-size: 1.2em;
 }
 
@@ -278,7 +286,7 @@ h4 {
 /*TODO: Learn how to deal with screen rotation.*/
 
 /* Tablet Rules. Only imports when screen width is > 400px & <=960px. These rules take priority over conflicting mobile rules. */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 601px) and (max-width: 960px) {
 
     
     /* Top Nav Bar */
@@ -318,7 +326,7 @@ h4 {
     }
 
 
-    .hero-text {
+    .hero {
         width: 45%;
         padding: 6% 3% 0px 0px;
         font-size: 1.8em;
