@@ -10,7 +10,7 @@ body {
     
 }
 
-/*TODO: Spacing between paragraphs, between ehadings, and between boxes is all over the place. Establish a common format. I suggest 10px after each of these elements and 20px above each main ehading.*/
+/*TODO: I'm not happy with the formatting of the text and links in the header. They were done early in the project, and I am now more able to set them out sensibly. I should restart them, establishing a fixed height for the area, set proportions for their contents, and using padding and alignments instead of messily mixed margins and padding to space the contents. */
 
 /* Top Nav Bar */
 
@@ -65,6 +65,7 @@ header{
 
 .hero {
     height: 50%;
+    margin: 0;
     background-image: url("images/profile05.jpg");
     background-repeat: no-repeat;
     background-size: cover;    
@@ -90,7 +91,6 @@ header{
     margin: 0;
     padding: 0px 0px 0px 0px;
     font-size: 2.2em;
-    color: burlywood;
 }
 
 .hero h1.hero-name {
@@ -119,18 +119,30 @@ header{
 
 .header-content {
     height: 50%;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
 }
 
-.header-text {;
-    margin: 3vh 3vw 3vh 3vw;
+.header-text {
+    margin: 0;
+    height: 60%;
+    padding: 3vh 5vw 3vh 5vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
 }
 
 .header-text p {
     margin: 0;
     line-height: 120%;
     font-size: 1.2em;
-    padding: 2vh 4vw 0vh 4vw;
+    padding: 0vh 0vw 2vh 0vw;
     background-color: white;
+    display: flex;
 }
 
 .punchy {
@@ -138,7 +150,9 @@ header{
 }
 
 .header-links {
-    padding: 3vh 0 3vh 0;
+    width: 100vw;
+    height: 40%;
+    padding: 0 0 0 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -328,14 +342,11 @@ h4 {
     /* Header: Hero Image*/
 
     .hero {
-        height: 47%;
+        height: 45%;
     }
 
-
-    .hero {
-        width: 45%;
-        padding: 6% 3% 0px 0px;
-        font-size: 1.8em;
+    .hero h1 {
+        font-size: 3.4em;
     }
 
     /* Header: Hero Image End ------------------------------------------------- */
@@ -343,10 +354,11 @@ h4 {
     /* Header: Text */
 
     .header-content {
-        height: 53%;
+        height: 55%;
     }
 
     .header-text p {
+        height: 60%;
         font-size: 2.0em;
     }
 
@@ -355,10 +367,13 @@ h4 {
     /* Header: Links */
 
     .header-links {
-        padding: 2vh 20vw 2vh 20vw;
+        height: 40%
+        margin: 0px;
+        padding: 0;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
+        align-items: center;
         /*Set the icon spacing*/
     }
     
