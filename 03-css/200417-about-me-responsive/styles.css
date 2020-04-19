@@ -12,26 +12,20 @@ body {
 
 /*TODO: Spacing between paragraphs, between ehadings, and between boxes is all over the place. Establish a common format. I suggest 10px after each of these elements and 20px above each main ehading.*/
 
-/* Top Nav Bar 
-TODO: Refine formatting*/
+/* Top Nav Bar */
+
 
 .top-nav-bar {
-    /*TODO: Why is this no longer fixe?*/
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 7vh; 
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     background-color: whitesmoke;
     border-bottom: solid 1px lavender;
-}
-
-.top-nav-bar > p {
-     font-size: 1.0em;
-     padding: 10px 2vw 10px 4vw;
 }
 
 .top-nav-bar ul {
@@ -456,7 +450,39 @@ h4 {
 
 /*Desktop Rules. Only imports when screen width is >960px. These rules take priority over conflicting mobile and tablet rules. */
 @media only screen and (min-width: 961px) {
-    body{
+  
+  
+/* General */
 
+body {
+    padding: 60px 0px 0px 0px;
+    margin: 0;
     }
+
+/* End General -----------------------------------------------------------*/
+
+/* Top Nav Bar */
+
+.top-nav-bar {
+    height: 60px; 
+    justify-content: left;
+}
+
+.top-nav-bar ul {
+    padding: 10px 0px 10px 25px;
+    font-size: 1.6em;
+    justify-content: start;
+}
+
+.top-nav-bar li {
+    padding: 0px 35px 0px 0px;
+    margin: 0;
+}
+
+
+/* End Top Nav Bar*------------------------------------------------------*/
+
+
+
+
 }
