@@ -54,10 +54,7 @@ TODO: Refine formatting*/
     text-decoration: none;
 }
 
-/* End Top Nav Bar*/
-
-
-/*------------------------------------------------------------------*/
+/* End Top Nav Bar*------------------------------------------------------*/
 
 
 /* Header */
@@ -183,12 +180,13 @@ a.goto-bar {
     top: -7vh;
 }
 
-/*End Goto Bars ------------------------------------------------------------*/
+/*End Goto Bars & Goto Links -----------------------------------------------*/
 
 /*Section: text-body*/
 
+/* Full Sections */
+
 .text-body{
-    background-color: cornflowerblue;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -197,6 +195,8 @@ a.goto-bar {
 .section {
     height: 86vh;
     background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 h3 {
@@ -216,34 +216,28 @@ h3 {
     flex-flow: column nowrap;
     justify-content: start;
     height: 83vh;
-
 }
 
 .section p {
     margin: 0;
     padding: 2vh 2vh 2vh 2vh;
     background-color: white;
-
 }
 
+/*End of Full Sections ---------------------------------------------------*/
 
+/* Subsections */
 
 h4 {
-    border-top: 1px solid lavender;
     margin: 0;
     padding: 2vh 2vh 0vh 2vh;
     font-size: 1.2em;
 }
 
-h4:first-child {
-    border-top: none;
-}
 
 
-.section { 
-    display: flex;
-    flex-flow: column nowrap;
-}
+
+/*End of Subsections -----------------------------------------------------*/
 
 /*Digital Art Section*/
 
@@ -262,6 +256,7 @@ h4:first-child {
     border-radius: 15pt;
 }
 
+/*End of Digital Art Section -----------------------------------------------*/
 
 /* Contact Section */
 
@@ -279,4 +274,189 @@ h4:first-child {
     
 .footer-links img {
     width: 15vw;
+}
+
+/* End of Contact Section ---------------------------------------------------*/
+
+
+/* Media Queries*/
+
+/*TODO: Learn how to deal with screen rotation.*/
+
+/* Tablet Rules. Only imports when screen width is > 400px & <=960px. These rules take priority over conflicting mobile rules. */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+    
+    /* Top Nav Bar */
+
+    .top-nav-bar {
+        height: 6vh;
+    }
+
+
+    .top-nav-links li {
+        font-size: 1.8em;
+    }
+
+    /* End Top Nav Bar ----------------------------------------------------- */
+
+    /* Body */
+
+    body {
+        padding: 6vh 0px 0px 0px;
+    }
+
+    /* End Body ------------------------------------------------------------ */
+
+
+    /* Header: General */
+
+    header{
+        height: 88vh;
+    }
+
+    /*End Header: General ---------------------------------------------------*/
+
+    /* Header: Hero Image*/
+
+    .hero {
+        height: 47%;
+    }
+
+
+    .hero-text {
+        width: 45%;
+        padding: 6% 3% 0px 0px;
+        font-size: 1.8em;
+    }
+
+    /* Header: Hero Image End ------------------------------------------------- */
+
+    /* Header: Text */
+
+    .header-content {
+        height: 53%;
+    }
+
+    .header-text p {
+        font-size: 2.0em;
+    }
+
+    /* Header: Text End ----------------------------------------------------- */
+
+    /* Header: Links */
+
+    .header-links {
+        padding: 2vh 20vw 2vh 20vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        /*Set the icon spacing*/
+    }
+    
+    .header-links img {
+        width: 12vw;
+    }
+
+    /* Header: Links End ---------------------------------------------------- */
+
+    /*Goto Bars & Goto Links*/
+
+    .goto-body {
+        height: 6vh;
+    }
+
+    .goto {
+        position: relative;
+        top: -6vh;
+    }
+
+    /*End Goto Bars & Goto Links -----------------------------------------------*/
+
+
+    /* Full Sections */
+.section {
+    height: 88vh;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+h3 {
+    height: 6vh;
+    font-size: 2.0em;
+}
+
+.section-text {
+    height: 82vh;
+    padding: 4vw 6vw 4vw 6vw;
+}
+
+.section p {
+    padding: 2vh 2vh 2vh 2vh;
+    background-color: white;
+    font-size: 1.6em;
+}
+
+/*End of Full Sections ---------------------------------------------------*/
+
+/* Subsections */
+
+h4 {
+    padding: 2vh 2vh 0vh 2vh;
+    font-size: 1.8em;
+}
+
+/*End of Subsections -----------------------------------------------------*/
+
+/*Digital Art Section*/
+
+.drawings {
+    padding: 1vh 2vw 1vh 2vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+
+}
+
+.drawings img {
+    /*TODO: MAke these imaes enlarge on click and window haze with dark grey. Include close button.*/
+    width: 23%;
+    border: 1px solid lavender;
+    border-radius: 15pt;
+}
+
+/*End of Digital Art Section -----------------------------------------------*/
+
+/* Contact Section */
+
+#contact-me {
+    height: 88vh
+}
+
+.footer-links {
+    padding: 3vh 0 3vh 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    /*Set the icon spacing*/
+}
+    
+.footer-links img {
+    width: 15vw;
+}
+
+/* End of Contact Section ---------------------------------------------------*/
+
+}
+
+/* End of Tablet Media Query ----------------------------------------------- */
+
+
+
+/*Desktop Rules. Only imports when screen width is >960px. These rules take priority over conflicting mobile and tablet rules. */
+@media only screen and (min-width: 961px) {
+    body{
+
+    }
 }
