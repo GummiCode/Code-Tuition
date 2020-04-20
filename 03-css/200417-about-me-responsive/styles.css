@@ -124,6 +124,7 @@ header{
     flex-flow: column nowrap;
     justify-content: start;
     align-items: center;
+    min-height: 50%;
 }
 
 .header-text {
