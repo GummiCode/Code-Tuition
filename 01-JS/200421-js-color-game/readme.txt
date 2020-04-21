@@ -1,5 +1,7 @@
 Date: 21/04/2020
 
-This folder contains my rendition of the JavaScript Color Game.
-It was produced using the freeCodeCamp course below.
-https://www.freecodecamp.org/news/learn-how-to-manipulate-the-dom-by-building-a-simple-javascript-color-game-1a3aec1d109a/
+This folder contains my implementation of The Great Color Game.
+Created using the module from The Web Developer Bootcamp by Colt Steeele on Udemy.
+
+Course: https://www.udemy.com/course/the-web-developer-bootcamp/
+https://www.udemy.com/course/the-web-developer-bootcamp/learn/lecture/5250406#questions
