@@ -5,9 +5,29 @@ var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay= document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
+var easyBtn = document.querySelector("#easyBtn");
+var hardBtn = document.querySelector("#hardBtn");
+var ultraBtn = document.querySelector("#ultraBtn");
+
+easyBtn.addEventListener("click", function () {
+    easyBtn.classList.add("selected");
+    hardBtn.classList.remove("selected");
+    ultraBtn.classList.remove("selected");
+});
+
+hardBtn.addEventListener("click", function () {
+    easyBtn.classList.remove("selected");
+    hardBtn.classList.add("selected");
+    ultraBtn.classList.remove("selected");
+});
+
+ultraBtn.addEventListener("click", function () {
+    easyBtn.classList.remove("selected");
+    hardBtn.classList.remove("selected");
+    ultraBtn.classList.add("selected");
+});
 
 resetButton.addEventListener("click", function() {
-    alert("CLICKED RESET");
     //reset the 'New Colors/Play Again?' button;
     resetButton.textContent = "New Colors";
     //Clear the 'Correct!/Try Again' text;
