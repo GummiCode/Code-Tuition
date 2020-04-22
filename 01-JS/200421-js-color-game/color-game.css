@@ -32,3 +32,9 @@ h1 {
 .selected {
     background-color: blue;
 }
+
+/*ULTRA*/
+.ultra {
+    display: none;
+}
+/* /ULTRA */

@@ -72,7 +72,8 @@ hardBtn.addEventListener("click", function () {
 
 });
 
-/* ULTRA MODE
+//ULTRA----------------------------------------------------------------------\/
+
 ultraBtn.addEventListener("click", function () {
     easyBtn.classList.remove("selected");
     hardBtn.classList.remove("selected");
@@ -99,9 +100,9 @@ ultraBtn.addEventListener("click", function () {
     messageDisplay.textContent = "";
     //reset the 'New Colors/Play Again?' button;
     resetButton.textContent = "New Colors";
-
 });
-*/
+
+// ULTRA ----------------------------------------------------------------------/\
 
 resetButton.addEventListener("click", function() {
     //reset the 'New Colors/Play Again?' button;
