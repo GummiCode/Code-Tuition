@@ -1,19 +1,32 @@
 var colors = generateRandomColors(6);
-
-[
-    "rgb(255, 0, 0)",
-    "rgb(255, 255, 0)",
-    "rgb(0, 255, 0)",
-    "rgb(0, 255, 255)",
-    "rgb(0, 0, 255)",
-    "rgb(255, 0, 255)"
-];
-
-
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay= document.querySelector("#message");
+var h1 = document.querySelector("h1");
+var resetButton = document.querySelector("#reset");
+
+resetButton.addEventListener("click", function() {
+    alert("CLICKED RESET");
+    //reset the 'New Colors/Play Again?' button;
+    resetButton.textContent = "New Colors";
+    //Clear the 'Correct!/Try Again' text;
+    messageDisplay.textContent = "";
+    //reset the header color;
+    h1.style.backgroundColor = "#232323";
+    //generate new colors;
+    colors = generateRandomColors(6);
+    //pick a new random color
+    pickedColor = pickColor();
+    //change colorDisplay to match the picked color
+    colorDisplay.textContent = pickedColor;
+    //chnage the colors of the squares
+    for (var i = 0; i < squares.length; i++) {
+        squares[i].style.backgroundColor = colors[i];
+    };
+    
+
+});
 
 colorDisplay.textContent = pickedColor;
 
@@ -37,10 +50,12 @@ for (var i = 0; i < squares.length; i++) {
         //compare color to picked color
         if (clickedColor === pickedColor) {
             messageDisplay.textContent = "Correct!";
+            resetButton.textContent = "Play Again?";
             changeColors(pickedColor);
+            h1.style.backgroundColor = clickedColor;
             //Shuffle colors;
         } else {
-            this.style.background = "#232323";
+            this.style.backgroundColor = "#232323";
             messageDisplay.textContent = "Try Again";
         };
     });
@@ -54,6 +69,7 @@ function changeColors(color){
     };
 };
 
+    //pick the winning color from those in the colors array
 function pickColor(){
     var random = Math.floor(Math.random()*colors.length);
     return colors[random];
@@ -65,7 +81,8 @@ function generateRandomColors(num) {
 
     //add num random colors to array
     for (var i=0; i<num; i++) {
-        //get a random colour and push it into the array
+
+    //get a random colour and push it into the array
         arr.push(randomColor());
     };
     
