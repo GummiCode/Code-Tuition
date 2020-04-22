@@ -33,7 +33,7 @@ easyBtn.addEventListener("click", function () {
         };
     };
     //reset the header color;
-    h1.style.backgroundColor = "#232323";
+    h1.style.backgroundColor = "steelblue";
     //Clear the 'Correct!/Try Again' text;
     messageDisplay.textContent = "";
     //reset the 'New Colors/Play Again?' button;
@@ -63,7 +63,7 @@ hardBtn.addEventListener("click", function () {
         };
     };
     //reset the header color;
-    h1.style.backgroundColor = "#232323";
+    h1.style.backgroundColor = "steelblue";
     //Clear the 'Correct!/Try Again' text;
     messageDisplay.textContent = "";
     //reset the 'New Colors/Play Again?' button;
@@ -95,7 +95,7 @@ ultraBtn.addEventListener("click", function () {
         };
     };
     //reset the header color;
-    h1.style.backgroundColor = "#232323";
+    h1.style.backgroundColor = "steelblue";
     //Clear the 'Correct!/Try Again' text;
     messageDisplay.textContent = "";
     //reset the 'New Colors/Play Again?' button;
@@ -110,7 +110,7 @@ resetButton.addEventListener("click", function() {
     //Clear the 'Correct!/Try Again' text;
     messageDisplay.textContent = "";
     //reset the header color;
-    h1.style.backgroundColor = "#232323";
+    h1.style.backgroundColor = "steelblue";
     //generate new colors;
     colors = generateRandomColors(numSquares);
     //pick a new random color
