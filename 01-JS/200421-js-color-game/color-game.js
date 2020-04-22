@@ -1,4 +1,5 @@
-var colors = generateRandomColors(6);
+var numSquares = 6;
+var colors = generateRandomColors(numSquares);
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
@@ -9,12 +10,15 @@ var easyBtn = document.querySelector("#easyBtn");
 var hardBtn = document.querySelector("#hardBtn");
 var ultraBtn = document.querySelector("#ultraBtn");
 
+
 easyBtn.addEventListener("click", function () {
     easyBtn.classList.add("selected");
     hardBtn.classList.remove("selected");
     ultraBtn.classList.remove("selected");
+    //Set numSquares to 3
+    numSquares=3;
     //Generate 3 random colors and assign them to the colors array
-    colors = generateRandomColors(3);
+    colors = generateRandomColors(numSquares);
     //Pick a winning color
     pickedColor = pickColor();
     //Display the RGB of the pciked color
@@ -40,8 +44,10 @@ hardBtn.addEventListener("click", function () {
     easyBtn.classList.remove("selected");
     hardBtn.classList.add("selected");
     ultraBtn.classList.remove("selected");
+    //Set numSquares to 6
+    numSquares=6;
     //Generate 6 random colors and assign them to the colors array
-    colors = generateRandomColors(6);
+    colors = generateRandomColors(numSquares);
     //Pick a winning color
     pickedColor = pickColor();
     //Display the RGB of the pciked color
@@ -71,9 +77,10 @@ ultraBtn.addEventListener("click", function () {
     easyBtn.classList.remove("selected");
     hardBtn.classList.remove("selected");
     ultraBtn.classList.add("selected");
-
+    //Set numSquares to 12
+    numSquares=12;
     //Generate 12 random colors and assign them to the colors array
-    colors = generateRandomColors(12);
+    colors = generateRandomColors(numSquares);
     //Pick a winning color
     pickedColor = pickColor();
     //Display the RGB of the picked color
@@ -104,7 +111,7 @@ resetButton.addEventListener("click", function() {
     //reset the header color;
     h1.style.backgroundColor = "#232323";
     //generate new colors;
-    colors = generateRandomColors(6);
+    colors = generateRandomColors(numSquares);
     //pick a new random color
     pickedColor = pickColor();
     //change colorDisplay to match the picked color
