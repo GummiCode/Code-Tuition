@@ -11,6 +11,7 @@ var colors = [
 var squares = document.querySelectorAll(".square");
 var pickedColor = colors[Math.floor(Math.random()*6)];
 var colorDisplay = document.getElementById("colorDisplay");
+var messageDisplay= document.querySelector("#message");
 
 colorDisplay.textContent = pickedColor;
 
@@ -33,13 +34,21 @@ for (var i = 0; i < squares.length; i++) {
 
         //compare color to picked color
         if (clickedColor === pickedColor) {
-            alert("Correct!");
+            messageDisplay.textContent = "Correct!";
+            changeColors(pickedColor);
             //Shuffle colors;
         } else {
-            alert("Wrong!");
+            this.style.background = "#232323";
+            messageDisplay.textContent = "Try Again";
         };
     });
 };
 
+function changeColors(color){
+    //loop through all squares, change each color to match given color
 
+    for (var i = 0; i < squares.length; i++) {
+        squares[i].style.backgroundColor = color;
+    };
+}
 
