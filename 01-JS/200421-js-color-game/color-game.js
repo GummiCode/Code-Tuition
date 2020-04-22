@@ -13,19 +13,88 @@ easyBtn.addEventListener("click", function () {
     easyBtn.classList.add("selected");
     hardBtn.classList.remove("selected");
     ultraBtn.classList.remove("selected");
+    //Generate 3 random colors and assign them to the colors array
+    colors = generateRandomColors(3);
+    //Pick a winning color
+    pickedColor = pickColor();
+    //Display the RGB of the pciked color
+    colorDisplay.textContent = pickedColor;
+    //Set the colors of the top three boxes to those in the colors array
+    for (var i = 0; i < squares.length; i++){
+        if (colors[i]) {
+            squares[i].style.backgroundColor = colors[i];
+        } else {
+    //Set the remaining boxes to hidden
+            squares[i].style.display = "none";
+        };
+    };
+    //reset the header color;
+    h1.style.backgroundColor = "#232323";
+    //Clear the 'Correct!/Try Again' text;
+    messageDisplay.textContent = "";
+    //reset the 'New Colors/Play Again?' button;
+    resetButton.textContent = "New Colors";
 });
 
 hardBtn.addEventListener("click", function () {
     easyBtn.classList.remove("selected");
     hardBtn.classList.add("selected");
     ultraBtn.classList.remove("selected");
+    //Generate 6 random colors and assign them to the colors array
+    colors = generateRandomColors(6);
+    //Pick a winning color
+    pickedColor = pickColor();
+    //Display the RGB of the pciked color
+    colorDisplay.textContent = pickedColor;
+    //Set the colors of the top three boxes to those in the colors array
+    for (var i = 0; i < squares.length; i++){
+        if (colors[i]) {
+            squares[i].style.backgroundColor = colors[i];
+            squares[i].style.display = "block";
+        } else {
+    //Set the remaining boxes to hidden. Keeping this for Ultra mode.
+            squares[i].style.display = "none";
+        };
+    };
+    //reset the header color;
+    h1.style.backgroundColor = "#232323";
+    //Clear the 'Correct!/Try Again' text;
+    messageDisplay.textContent = "";
+    //reset the 'New Colors/Play Again?' button;
+    resetButton.textContent = "New Colors";
+
+
 });
 
+/* ULTRA MODE
 ultraBtn.addEventListener("click", function () {
     easyBtn.classList.remove("selected");
     hardBtn.classList.remove("selected");
     ultraBtn.classList.add("selected");
+
+    //Generate 12 random colors and assign them to the colors array
+    colors = generateRandomColors(12);
+    //Pick a winning color
+    pickedColor = pickColor();
+    //Display the RGB of the picked color
+    colorDisplay.textContent = pickedColor;
+    //Set the colors of the top three boxes to those in the colors array
+    for (var i = 0; i < squares.length; i++){
+        if (colors[i]) {
+            squares[i].style.backgroundColor = colors[i];
+            squares[i].style.display = "block";
+
+        };
+    };
+    //reset the header color;
+    h1.style.backgroundColor = "#232323";
+    //Clear the 'Correct!/Try Again' text;
+    messageDisplay.textContent = "";
+    //reset the 'New Colors/Play Again?' button;
+    resetButton.textContent = "New Colors";
+
 });
+*/
 
 resetButton.addEventListener("click", function() {
     //reset the 'New Colors/Play Again?' button;
